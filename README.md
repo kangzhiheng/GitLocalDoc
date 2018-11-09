@@ -228,6 +228,7 @@ $ source ./virtual-envs/tensorflow-gpu/bin/activate
 (tensorflow-gpu) username@devices:~$
 ```
 即为正常。
+
 上述命令解释
 
 name|意义
