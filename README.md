@@ -180,13 +180,13 @@ OpneGL支持版本|OpenGL 4.5
 - [cuDNN](https://developer.nvidia.com/cudnn) —— 大于等于cuDNN 7.0
 
 在服务器上管理员已经提前安装好了NVIDIA驱动、CUDA及cuDNN，具体信息如下：
-所需环境  |版本信息 | 备注
-:-: | :-: | :-:
-NVIDIA驱动 | 390.77 | *已安装*
-CUDA | 9.0 | *已安装*
-cuDNN | 7.0.5 | *已安装*
-gcc/g++|4.8.5 | *已降级*
-Tensorflow | 建议`1.6` | **未安装**
+所需环境|版本信息|备注
+:-:|:-:|:-:
+NVIDIA驱动|390.77|*已安装*
+CUDA|9.0|*已安装*
+cuDNN|7.0.5|*已安装*
+gcc/g++|4.8.5|*已降级*
+Tensorflow|建议`1.6`|**未安装**
 
 ### 安装tensorflow-gpu
 下面将介绍两种方法安装tensorflow-gpu：
@@ -234,7 +234,7 @@ username|用户名
 devices|主机名
 ~|当前用户主目录
 $|普通用户
-(tensorflow-gpu) | 系统指定环境
+(tensorflow-gpu)|系统指定环境
 
 >为什么要激活环境？因为独立的环境利于管理，不激活不会对系统环境造成不必要的影响，若虚拟环境遇到了无法期望的错误，即可删除环境并重新创建即可，不需要重装系统；而且virtualenv可用于创建独立的Python环境，多个Python相互独立，互不影响，不同应用可以使用不同的版本，环境内的包升级不影响其他应用。
 
