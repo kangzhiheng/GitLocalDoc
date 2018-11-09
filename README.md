@@ -218,11 +218,11 @@ pip3 install -U virtualenv --user
 
 在终端继续运行
 ```bash
-virtualenv --system-site-packages -p python3 ./virtual-envs/tensorflow-gpu
+virtualenv --system-site-packages -p python3 ~/virtual-envs/tensorflow-gpu
 ```
 即在 **~/virtual-envs** 文件夹里创建了名为 **_tensorflow-gpu_** 的虚拟环境，再输入以下命令**激活环境**
 ```bash
-$ source ./virtual-envs/tensorflow-gpu/bin/activate
+$ source ~/virtual-envs/tensorflow-gpu/bin/activate
 ```
 此时终端会变成如下模样
 ```bash
@@ -269,7 +269,7 @@ bash Anaconda3-5.2.0-Linux-x86_64.sh
 ```
 按`Enter`键继续，出现以下的界面
 ![Anaconda_1](https://github.com/kangzhiheng/GitLocalDoc/blob/master/img/Anaconda_1.png)
-此时按以下`space`(空格)键，有如下提示，在`[no] >>>` 后面输入`yes`，如下所示：
+此时按一下`space`(空格)键，有如下提示，在`[no] >>>` 后面输入`yes`，如下所示：
 ```bash
 Do you accept the license terms? [yes|no]
 [no] >>> yes
