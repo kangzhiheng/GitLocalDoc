@@ -180,6 +180,7 @@ OpneGL支持版本|OpenGL 4.5
 - [cuDNN](https://developer.nvidia.com/cudnn) —— 大于等于cuDNN 7.0
 
 在服务器上管理员已经提前安装好了NVIDIA驱动、CUDA及cuDNN，具体信息如下：
+
 所需环境|版本信息|备注
 :-:|:-:|:-:
 NVIDIA驱动|390.77|*已安装*
