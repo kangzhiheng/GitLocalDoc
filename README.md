@@ -126,7 +126,7 @@ passwd username
 
 以window 10为例，利用FileZilla登录到服务器后，可以看到左边是**本地站点**，右边是**远程站点**(服务器上的目录)，如下图所示，直接将本地文件`test.py`用鼠标拖拽到服务器上的指定目录即可（**上传过程**），这个过程是可逆的（**下载过程**），非常方便。
 
-![FileZilla_file](E:/Dell/Documents/GitHub/实验室服务器环境配置/img/FileZilla_file.png)
+![FileZilla_file](https://github.com/kangzhiheng/GitLocalDoc/blob/master/img/FileZilla_file.png)
 
 ### 总结
 利用**FileZilla**软件配合**SSH**协议，即可完成文件传输及程序运行等必要工作。
@@ -139,7 +139,7 @@ nvidia-smi
 ```
 若输出以下信息，即证明显卡驱动已安装.
 
-![nvidia](E:/Dell/Documents/GitHub/实验室服务器环境配置/img/nvidia.png)
+![nvidia](https://github.com/kangzhiheng/GitLocalDoc/blob/master/img/nvidia.png)
 
 若有错误提示，请及时联系管理员**adoredee**(kangzhiheng@sjtu.edu.cn)
 
