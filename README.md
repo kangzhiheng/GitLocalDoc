@@ -144,9 +144,10 @@ nvidia-smi
 若有错误提示，请及时联系管理员**adoredee**(kangzhiheng@sjtu.edu.cn)
 
 **实验室GPU信息如下：**
+
 规格|核心参数
 :-:|:-:
-显卡核心|NVIDIA GeForce GTX1080|
+显卡核心|NVIDIA GeForce GTX1080
 显存频率|10010MHz
 显存大小|8G
 显存类型|GDDR5X
