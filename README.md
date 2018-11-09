@@ -228,6 +228,7 @@ $ source ./virtual-envs/tensorflow-gpu/bin/activate
 ```
 即为正常。
 上述命令解释
+
 name|意义
 :-:|:-:
 username|用户名
