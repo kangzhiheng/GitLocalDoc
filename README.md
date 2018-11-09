@@ -263,7 +263,7 @@ ls
 bash Anaconda3-5.2.0-Linux-x86_64.sh
 ```
 按`Enter`键继续，出现以下的界面
-![Anaconda_1](E:/Dell/Documents/GitHub/实验室服务器环境配置/img/Anaconda_1.png)
+![Anaconda_1](https://github.com/kangzhiheng/GitLocalDoc/blob/master/img/Anaconda_1.png)
 此时按以下`space`(空格)键，有如下提示，在`[no] >>>` 后面输入`yes`，如下所示：
 ```bash
 Do you accept the license terms? [yes|no]
