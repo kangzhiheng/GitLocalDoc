@@ -144,20 +144,20 @@ nvidia-smi
 若有错误提示，请及时联系管理员**adoredee**(kangzhiheng@sjtu.edu.cn)
 
 **实验室GPU信息如下：**
- 规格 | 核心参数
- :-: | :-:
- 显卡核心|NVIDIA GeForce GTX1080|
- 显存频率|10010MHz
- 显存大小|8G
- 显存类型|GDDR5X
- 显存位宽|256位
- 总线类型|PCI-E 3.0 x 16
- 数字最高分辨率|7680 x 4320
- SLI|支持
- 散热器类型|风冷
- 额定电源|500W
- 供电外接需求|8pin x 1
- OpneGL支持版本|OpenGL 4.5
+规格|核心参数
+:-:|:-:
+显卡核心|NVIDIA GeForce GTX1080|
+显存频率|10010MHz
+显存大小|8G
+显存类型|GDDR5X
+显存位宽|256位
+总线类型|PCI-E 3.0 x 16
+数字最高分辨率|7680 x 4320
+SLI|支持
+散热器类型|风冷
+额定电源|500W
+供电外接需求|8pin x 1
+OpneGL支持版本|OpenGL 4.5
 
 ## 安装tensorflow的GPU版本
   
