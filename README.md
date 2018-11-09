@@ -8,6 +8,7 @@ E-mail | kangzhiheng@sjtu.edu.cn
   * [SSH](#ssh)
     * [SSH安装](#ssh安装)
     * [SSH登录](#ssh登录)
+    * [修改密码](#修改密码)
   * [FileZilla](#filezilla)
     * [安装FileZilla](#安装filezilla)
     * [登录服务器](#登录服务器)
@@ -88,7 +89,7 @@ ssh username@IPaddress -p PORT
 
 输入密码后即可进入自己账户的主目录（普通用户，无root权限）
 
-**修改密码**
+### 修改密码
 登录到服务器之后，修改原始密码保证账户安全
 ```bash
 passwd username
