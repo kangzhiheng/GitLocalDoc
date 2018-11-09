@@ -100,7 +100,7 @@ passwd username
 ### FileZilla
 > FileZilla 客户端是一个快速可靠的、跨平台的FTP,FTPS和SFTP客户端。具有图形用户界面(GUI)和很多有用的特性，比如支持FTP, FTP并支持SSL/TLS (FTPS)协议，支持SSH文件传输协议(SFTP)等。
 
-![FileZilla](E:/Dell/Documents/GitHub/实验室服务器环境配置/img/FileZilla_Client.png)
+![FileZilla](https://github.com/kangzhiheng/GitLocalDoc/blob/master/img/FileZilla_Client.png)
 
 **FileZilla**可以进行本地文件与服务器文件的相互传输，具体操作如下：
 
