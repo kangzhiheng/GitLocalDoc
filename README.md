@@ -59,7 +59,7 @@ SSH和FileZilla都安装在**本地计算机系统**中
 
  - **_ubuntu_**
 
-快捷键`ctrl`+`alt`+`t`打开ubuntu命令行窗口，运行：
+需要普通管理员权限(sudo)，用快捷键`ctrl`+`alt`+`t`打开终端Terminal窗口，运行：
 ```python
 sudo apt-get install openssh-server
 ```
