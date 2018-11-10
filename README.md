@@ -176,10 +176,11 @@ OpneGL支持版本|OpenGL 4.5
 * Raspbian 9.0或更高版本
 
 ### 软件需求
-[官网](https://tensorflow.google.cn/install/gpu)要求**必须在系统上安装以下NVIDIA®软件**
+根据[官网](https://tensorflow.google.cn/install/gpu) 以及我个人经验，**_Tensorflow1.6.0的GPU版本_** 要求**在系统上安装以下NVIDIA®软件**
 - [NVIDIA® GPU驱动](https://www.nvidia.com/drivers) —— CUDA 9.0要求NVIDIA驱动384.x或者更高版本
-- [CUDA® Toolkit](https://developer.nvidia.com/cuda-zone) —— TensorFlow支持CUDA 9.0.
-- [cuDNN](https://developer.nvidia.com/cudnn) —— 大于等于cuDNN 7.0
+- [CUDA® Toolkit](https://developer.nvidia.com/cuda-zone) —— TensorFlow1.6.0支持CUDA 9.0.
+- [cuDNN](https://developer.nvidia.com/cudnn) —— 大于等于cuDNN 7.0，这里选择cuDNN 7.0.5
+
 
 在服务器上管理员已经提前安装好了NVIDIA驱动、CUDA及cuDNN，具体信息如下：
 
