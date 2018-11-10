@@ -114,10 +114,10 @@ passwd username
 * 1. 点击"**文件**"——"**站点管理器**"
 * 2. 点击"**新站点**"，在"**我的站点**"下重命名，此处设为“Lab532”
 * 3. 继停留在"**站点管理器**"界面，在"**常规**"选项卡中，设置如下：
-	主机：[ning.sjtu.edu.cn](https://ning.sjtu.edu.cn/)
-	端口：**22**或者**8888**
-	协议：**SFTP - SSH File transfer Protocol**
-	登录类型：
+	* 主机：[ning.sjtu.edu.cn](https://ning.sjtu.edu.cn/)
+	* 端口：**22**或者**8888**
+	* 协议：**SFTP - SSH File transfer Protocol**
+	* 登录类型：
 	1）若选"**正常**"
 		用户名：username
 		密码：password
