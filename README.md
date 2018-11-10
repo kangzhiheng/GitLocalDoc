@@ -255,6 +255,15 @@ deactivate
 ```bash
 pip install tensorflow-gpu==1.6.0
 ```
+安装过程中，有`yes`输入 **_yes_** ,等待tensorflow 1.6.0的GPU版本安装完成。
+
+**提示**
+若想安装CPU版本，替换上条命令
+```bash
+pip install tensorflow==1.6.0
+```
+即可。
+
 是否正确安装，请参照章节 **_测试tensorflow-gpu版本的正确性_** 里的方法验证。
 
 ### Anaconda安装tensorflow-gpu
