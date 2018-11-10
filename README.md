@@ -190,7 +190,7 @@ NVIDIA驱动|390.77|*已安装*
 CUDA|9.0|*已安装*
 cuDNN|7.0.5|*已安装*
 gcc/g++|4.8.5|*已降级*
-Tensorflow|建议`1.6`|**未安装**
+Tensorflow(GPU版本)|建议`1.6`|**未安装**
 
 ### 安装tensorflow-gpu
 下面将介绍两种方法安装tensorflow-gpu：
