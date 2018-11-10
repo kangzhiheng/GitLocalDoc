@@ -49,6 +49,7 @@ list|username
 
 - **SSH**是用来**登录**远程服务器的安全协议；
 - **FileZilla**是一个免费开源的FTP软件，支持SSH文件传输协议(SFTP)(可进行本地计算机与远程服务器之间的**文件传输**)
+
 SSH和FileZilla都安装在**本地计算机系统**中
 ### SSH
 > [SSH](https://en.wikipedia.org/wiki/Secure_Shell)(Secure Shell)由 IETF 的网络小组（Network Working Group）所制定；SSH 为建立在应用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。
