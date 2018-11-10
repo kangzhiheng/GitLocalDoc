@@ -107,7 +107,7 @@ passwd username
 **FileZilla**可以进行本地文件与服务器文件的相互传输，具体操作如下：
 
 ### 安装FileZilla
-以windows 10为例，下载[FileZilla](https://download.filezilla.cn/client/windows/FileZilla_3.33.0_win64-setup.exe)，选择安装位置，正常安装即可。
+以windows 10为例，下载[FileZilla](https://download.filezilla-project.org/client/FileZilla_3.38.1_win64-setup_bundled.exe)，选择安装位置，正常安装即可。
 
 ### 登录服务器
 打开FileZilla软件，
