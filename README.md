@@ -358,16 +358,12 @@ True
 ## 问题汇总
 
 #### 情况1
-
-#错误#
-激活环境后，导入`import tensorflow as tf`包后，出现错误
+**错误**——激活环境后，导入`import tensorflow as tf`包后，出现错误
 > ImportError: libcublas.so.9.0: cannot open shared object file: No such file or directory
 
-#原因#
-cuda版本问题，cuda动态链接库没有与系统共享，可能是cuda安装过程中，环境变量`LD_LIBRARY_PATH`未能配置正确
+**原因**——cuda版本问题，cuda动态链接库没有与系统共享，可能是cuda安装过程中，环境变量`LD_LIBRARY_PATH`未能配置正确
 
-#解决#
-`libcublas.so.9.0`文件在`/usr/local/cuda/lib64`路径下，将其动态链接库为系统共享即可，针对普通管理员用户，在终端运行
+**解决**——`libcublas.so.9.0`文件在`/usr/local/cuda/lib64`路径下，将其动态链接库为系统共享即可，针对普通管理员用户，在终端运行
 ```python
 sudo ldconfig /usr/local/cuda/lib64
 ```
