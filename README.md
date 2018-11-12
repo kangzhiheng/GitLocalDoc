@@ -23,6 +23,7 @@ E-mail | kangzhiheng@sjtu.edu.cn
     * [virtualenv安装tensorflow-gpu](#virtualenv安装tensorflow-gpu)
     * [Anaconda安装tensorflow-gpu](#anaconda安装tensorflow-gpu)
     * [测试tensorflow-gpu版本的正确性](#测试tensorflow-gpu版本的正确性)
+* [问题汇总](#问题汇总)
 * [在服务器上利用GPU跑程序的简化步骤](#在服务器上利用gpu跑程序的简化步骤)
 
 
@@ -353,6 +354,21 @@ True
 >>> print(tf.__version__)
 ```
 注意，`__`为两个`_`组合而成。
+
+## 问题汇总
+##_情况1._## 
+### 错误
+激活环境后，导入`import tensorflow as tf`包后，出现错误
+> ImportError: libcublas.so.9.0: cannot open shared object file: No such file or directory
+### 原因
+cuda版本问题，cuda动态链接库没有与系统共享，可能是cuda安装过程中，环境变量`LD_LIBRARY_PATH`未能配置正确
+### 解决
+`libcublas.so.9.0`文件在`/usr/local/cuda/lib64`路径下，将其动态链接库为系统共享即可，针对普通管理员用户，在终端运行
+```python
+sudo ldconfig /usr/local/cuda/lib64
+```
+问题就会被解决。
+
 
 ## 在服务器上利用GPU跑程序的简化步骤
 1. 利用FileZilla软件登录远程服务器上传所需程序文件
