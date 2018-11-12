@@ -369,6 +369,7 @@ sudo ldconfig /usr/local/cuda/lib64
 ```
 问题就会被解决。
 
+（未完待续，随时更新）
 
 ## 在服务器上利用GPU跑程序的简化步骤
 1. 利用FileZilla软件登录远程服务器上传所需程序文件
