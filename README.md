@@ -115,14 +115,14 @@ passwd username
 * 1. 点击"**文件**"——"**站点管理器**"
 * 2. 点击"**新站点**"，在"**我的站点**"下重命名，此处设为“Lab532”
 * 3. 继停留在"**站点管理器**"界面，在"**常规**"选项卡中，设置如下：
-	* 主机：[ning.sjtu.edu.cn](https://ning.sjtu.edu.cn/)
-	* 端口：**22**或者**8888**
-	* 协议：**SFTP - SSH File transfer Protocol**
-	* 登录类型：
-		- 1）若选"**正常**"
-			- 用户名：username
-			- 密码：password
-		- 2）若选"**询问密码**"，只能填写用户名：username，然后点击右下角的"**连接**"，再输入密码。
+  * 主机：**IPaddress**
+  * 端口：**22**或者**8888**
+  * 协议：**SFTP - SSH File transfer Protocol**
+  * 登录类型：
+    - 1）若选"**正常**"
+    	- 用户名：username
+    	- 密码：password
+    - 2）若选"**询问密码**"，只能填写用户名：username，然后点击右下角的"**连接**"，再输入密码。
 * 4. 之后一直ok即可。
 
 ### 文件传输  
@@ -164,7 +164,7 @@ SLI|支持
 OpneGL支持版本|OpenGL 4.5
 
 ## 安装tensorflow的GPU版本
-  
+
   配置TensorFlow GPU环境需要各种库和包支持，为了简化和避免库之间的冲突，建议使用[virtualenv](https://tensorflow.google.cn/install/pip)、[pip](https://tensorflow.google.cn/install/pip)或者[Docker](https://tensorflow.google.cn/install/docker)安装，本篇教程介绍[virtualenv](https://tensorflow.google.cn/install/pip)和[pip](https://tensorflow.google.cn/install/pip)两种方法安装`tensorflow-gpu-1.6.0`版本。
 
 ### 硬件支持
