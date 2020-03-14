@@ -3,7 +3,6 @@ Author | kangzhiheng
 :-: | :-:
 E-mail | kangzhiheng@sjtu.edu.cn
 ### Contents
-* [实验室服务器用户名清单](#实验室服务器用户名清单)
 * [安装SSH和FileZilla](#安装ssh和filezilla)
   * [SSH](#ssh)
     * [SSH安装](#ssh安装)
