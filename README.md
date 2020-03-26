@@ -409,12 +409,17 @@ sudo ldconfig /usr/local/cuda/lib64
 ## 在服务器上利用GPU跑程序的简化步骤
 1. 利用FileZilla软件登录远程服务器上传所需程序文件
 2. 在终端利用SSH登录远程服务器
+3. 按照下面的命令进行操作，建议使用**tmux终端复用神器**，第2、3、4步不是必须的，但是强烈推荐使用！
 ```bash
 ssh username@IPaddress -p 22      # 登录服务器
-source activate tensorflow-gpu    # 激活tensorflow-gpu环境
+tmux ls                           # 查看终端会话列表，若没有，新建一个
+                                  # 会话窗口 tmux new -s YourSeeName，保证程序在后台运行
+tmux a -t YourSeeName             # 进入你指定的会话窗口
+source activate tensorflow-gpu    # 在会话窗口中激活tensorflow-gpu环境
 cd xxx/xxx                        # 程序文件所在路径
 ls                                # 查看文件
 python abc.py                     # 运行程序
+
 ```
 
 
