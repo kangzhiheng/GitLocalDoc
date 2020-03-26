@@ -416,7 +416,7 @@ tmux ls                           # 查看终端会话列表，若没有，新�
                                   # 会话窗口 tmux new -s YourSeeName，保证程序在后台运行
 tmux a -t YourSeeName             # 进入你指定的会话窗口
 source activate tensorflow-gpu    # 在会话窗口中激活tensorflow-gpu环境
-cd xxx/xxx                        # 程序文件所在路径
+cd xxx/yyy                        # 程序文件所在路径
 ls                                # 查看文件
 python abc.py                     # 运行程序
 
