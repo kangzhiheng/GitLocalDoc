@@ -213,7 +213,7 @@ nvidia-smi
 
 * **_安装Python包管理工具——pip_**
 
-在终端利用SSH登录到服务器系统(CentOS 7.6)，由于**普通用户**无法使用`sudo`，故不能直接使用`sudo apt-get install virtualenv`安装virtualenv虚拟环境，故使用以下方法，**先安装pip**，再安装**virtualenv**，在终端中运行
+在终端利用SSH登录到服务器系统(CentOS 7.6)，由于**普通用户**无法使用`sudo`，故不能直接使用`sudo yum install virtualenv`安装virtualenv虚拟环境，故使用以下方法，**先安装pip**，再安装**virtualenv**，在终端中运行
 
 ```bash
 wget https://bootstrap.pypa.io/get-pip.py
