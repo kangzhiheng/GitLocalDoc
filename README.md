@@ -1,4 +1,13 @@
+
+
+
+
+
+
+
+
 # Lab532服务器环境(CentOS 7.6)须知
+
 Author | kangzhiheng
 :-: | :-:
 E-mail | kangzhiheng@sjtu.edu.cn
@@ -413,7 +422,7 @@ sudo ldconfig /usr/local/cuda/lib64
 1. 利用FileZilla软件登录远程服务器上传所需程序文件
 2. 在终端利用SSH登录远程服务器
 3. 按照下面的命令进行操作，建议使用**tmux终端复用神器**，第2、3步不是必须的，但是强烈推荐使用！
-```bash
+```
 step 1:  ssh username@IPaddress -p 22      # 登录服务器
 step 2:  tmux ls                           # 查看终端会话列表，若没有，新建一个
                                            # 会话窗口 tmux new -s YourSeeName，保证程序在后台运行
@@ -423,6 +432,12 @@ step 5:  cd xxx/yyy                        # 程序文件所在路径
 step 6:  ls                                # 查看文件
 step 7:  python abc.py                     # 运行程序
 ```
+
+**如果按照上述操作，则程序是在tmux的会话环境下运行的，这样的好处是，即使退出tmux环境，即使关闭了终端，只要服务器不爆炸（不宕机），就不影响程序的运行。**
+
+如果你还有第二个程序任务需要运行，可以**Ctrl + D**退出当前的tmux环境进入到Linux终端下，然后新建新的tmux会话窗口，重复step3到step7。
+
+当然也可以在tmux里进行窗口间的切换，具体方法敬请期待。
 
 
 - [x] 1. 实验室服务器用户名清单
