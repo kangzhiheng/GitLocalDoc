@@ -73,9 +73,12 @@ ssh username@IPaddress -p PORT
 ```
 
 其中，
-`username`为服务器的用户名
-`IPaddress`为服务器的IP地址
-`PORT`为服务器端口号，默认为22，已禁止。已设置实验室专用端口，请联系管理员
+
+- `username`为服务器的用户名
+
+- `IPaddress`为服务器的IP地址
+
+- `PORT`为服务器端口号，默认为22，已禁止。已设置实验室专用端口，请联系管理员
 
 输入密码后即可进入自己账户的主目录（普通用户，无root权限）
 
@@ -87,7 +90,7 @@ ssh username@IPaddress -p PORT
 passwd
 ```
 
-`username`为您在服务器上的用户名，根据提示修改新的密码。
+根据提示修改新的密码。
 
 至此，您已经安全登录到服务器上。
 
