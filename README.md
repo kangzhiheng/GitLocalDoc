@@ -414,7 +414,7 @@ sudo ldconfig /usr/local/cuda/lib64
 2. 在终端利用SSH登录远程服务器
 3. 按照下面的命令进行操作，建议使用**tmux终端复用神器**，第2、3步不是必须的，但是强烈推荐使用！
 ```bash
-step 1: ssh username@IPaddress -p 22       # 登录服务器
+step 1:  ssh username@IPaddress -p 22      # 登录服务器
 step 2:  tmux ls                           # 查看终端会话列表，若没有，新建一个
                                            # 会话窗口 tmux new -s YourSeeName，保证程序在后台运行
 step 3:  tmux a -t YourSeeName             # 进入你指定的会话窗口
