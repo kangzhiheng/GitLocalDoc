@@ -4244,7 +4244,7 @@ Nothing is everywhere！可能只能去现场启动**重启大法**了。
 
 （未完待续，随时更新）
 
-### 参考
+## 参考
 
 1. [stat cuda](https://blog.csdn.net/ksws0292756/article/details/80120561?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2)
 2. [NVIDIA NVML Driver/library version mismatch](https://blog.csdn.net/Hungryof/article/details/99233087?depth_1-utm_source=distribute.pc_relevant.none-task-blog-OPENSEARCH-2&utm_source=distribute.pc_relevant.none-task-blog-OPENSEARCH-2)
