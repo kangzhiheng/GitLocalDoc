@@ -1921,7 +1921,7 @@ tar -xzvf cudnn-9.0-linux-x64-v7.solitairetheme8
 查看`linudnn.so`、`libcudnn.so.7`、`libcudnn.so.7.0.5`的关系
 
 ```bash
-ll ~/NVIDIA/cuDNN/lib64
+ll ~/NVIDIA/cuDNN/cuda/lib64
 ```
 
 输出
@@ -3046,9 +3046,11 @@ pip install tensorflow-gpu==1.6.0
 
 是否正确安装，请参照章节 **_测试tensorflow-gpu版本的正确性_** 里的方法验证。
 
-#### 测试tensorflow-gpu版本的正确性
+### 版本检测及GPU是否安装成功检测
 
-在激活的环境中，输入`python`，进入到python3.6环境中，依次输入命令
+#### Tensorflow GPU版本的正确性验证
+
+在**激活**的环境中，输入`python`，进入到python3.6环境中，依次输入命令
 
 ```python
 >>> import tensorflow as tf
@@ -3072,7 +3074,27 @@ True
 
 ```python
 >>> import tensorflow as tf
->>> print(tf.__version__)
+>>> tf.__version__
+```
+
+注意，`__`为两个`_`组合而成。
+
+#### PyTorch GPU版本的正确性验证
+
+在**激活**的环境中，输入`python`，进入到python3.6环境中，依次输入命令
+
+```python
+>>> import torch
+>>> torch.cuda.is_available()
+```
+
+若输出`True`，则表示PyTorch GPU版本安装成功！
+
+查看PyTorch 的版本的命令为
+
+```python
+>>> import torch
+>>> torch.__version__
 ```
 
 注意，`__`为两个`_`组合而成。
@@ -3206,6 +3228,8 @@ HTTP errors are often intermittent, and a simple retry will get you on your way.
 ```
 
 可能因为网络原因导致安装中断，不断尝试安装命令即可。
+
+安装完成后，请根据小节[PyTorch GPU版本的正确性验证](#PyTorch GPU版本的正确性验证)进行版本验证。
 
 ### NVim/Vim简单使用
 
@@ -4374,7 +4398,7 @@ Nothing is everywhere！可能只能去现场启动**重启大法**了。
 
 - **错误**——激活环境后，导入`import tensorflow as tf`包后，出现错误
 
-  > ImportError: libcublas.so.9.0: cannot open shared object file: No such file or directory
+  > ImportError: libcublas.so.7.0: cannot open shared object file: No such file or directory
 
 - **原因**——cuda版本问题，cuda动态链接库没有与系统共享，可能是cuda安装过程中，环境变量`LD_LIBRARY_PATH`未能配置正确
 
@@ -4386,11 +4410,11 @@ Nothing is everywhere！可能只能去现场启动**重启大法**了。
 
   问题可能会被解决，如果出现了**情况2**，请看解答。
 
-### 3. libcublas.so.9.0: cannot open shared object file
+### 3. libcublas.so.7.0: cannot open shared object file
 
 - **错误**——运行**情况1**里的`sudo ldconfig /usr/local/cuda/lib64`后，出现错误
 
-  > libcublas.so.9.0: cannot open shared object file: No such file or directory
+  > libcublas.so.7.0: cannot open shared object file: No such file or directory
 
 - **原因**——符号链接出错
 
