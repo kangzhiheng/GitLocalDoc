@@ -386,7 +386,7 @@ df -h
 ### 查看服务器系统信息
 
 ```bash
-cat /etc/*releasebash
+cat /etc/*release
 ```
 
 输出
