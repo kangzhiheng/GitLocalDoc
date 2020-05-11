@@ -1,12 +1,14 @@
 # 服务器（CentOS 7.7）管理、深度学习环境搭建、配置及使用
 
+![](https://gitee.com/kangzhiheng/ImageHosting/raw/master/Img/adoredee.png)
+
 Author | kangzhiheng
 :-: | :-:
 E-mail | kangzhiheng@sjtu.edu.cn
 
 
 
-谨以此文献给在交大的那段时光~
+### 谨以此文献给在交大的那段时光~
 
 
 
