@@ -441,7 +441,7 @@ lspci | grep -i 'eth'
 
 ```
 
-**查查看系统的所有网络接口**
+**查看系统的所有网络接口**
 
 ```bash
 ifconfig -a
@@ -574,8 +574,6 @@ htop
 ```bash
 kill -9 PID
 ```
-
-![](https://s4.aconvert.com/convert/p3r68-cdx67/a6yfe-e7t35.png)
 
 ### 资源统计
 
@@ -1204,17 +1202,19 @@ sudo service lightdm stop
 
 #### 禁用第三方开源驱动nouveau
 
-Nouveau是由第三方为NVIDIA显卡开发的一个开源3D驱动，不过没有得到NVIDIA的认可与支持。Nouveau让Linux更容易的应对各种复杂的NVIDIA显卡环境，让用户安装完系统即可进入桌面并且有不错的显示效果，所以，很多Linux发行版默认集成了Nouveau驱动，在遇到NVIDIA显卡时默认安装。企业版的Linux更是如此，几乎所有支持图形界面的企业Linux发行版都将Nouveau收入其中。不过对于个人桌面用户来说，处于成长阶段的Nouveau并不完美，与企业版不一样，个人用户除了想让正常显示图形界面外很多时候还需要一些3D特效，Nouveau多数时候并不能完成，而用户在安装NVIDIA官方私有驱动的时候Nouveau又成为了阻碍，如果不干掉Nouveau，NVIDIA驱动安装时总是报错。
+&emsp;&emsp;Nouveau是由第三方为NVIDIA显卡开发的一个开源3D驱动，不过没有得到NVIDIA的认可与支持。Nouveau让Linux更容易的应对各种复杂的NVIDIA显卡环境，让用户安装完系统即可进入桌面并且有不错的显示效果，所以，**很多Linux发行版默认集成了Nouveau驱动。**企业版的Linux更是如此，几乎所有支持图形界面的企业Linux发行版都将Nouveau收入其中。
+
+&emsp;&emsp;不过对于个人桌面用户来说，处于成长阶段的Nouveau并不完美，与企业版不一样，个人用户除了想让正常显示图形界面外很多时候还需要一些3D特效，Nouveau多数时候并不能完成，而用户在安装NVIDIA官方私有驱动的时候Nouveau又成为了阻碍，如果不干掉Nouveau，NVIDIA驱动安装时总是报错。
 
 ![](https://pic.downk.cc/item/5e93446cc2a9a83be5684112.jpg)
 
 **NVIDIA驱动和nouveau驱动最好二选一**，一般情况下，**深度学习环境配置需禁用nouveau驱动**，查看nouveau驱动信息：
 
 ```bash
-lsmod |grep nouveau
+lsmod | grep nouveau
 ```
 
-若有输出，需要禁止该nvidia第三方驱动，若无，OK，**Linux哲学之一：没有消息就是最好的消息。**可忽略该步骤。
+若有输出，需要禁止该nvidia第三方驱动，若无，OK， **Linux哲学之一：没有消息就是最好的消息。** 可忽略该步骤。
 
 **禁用nouveau驱动，需要配置相关文件**
 
@@ -1249,7 +1249,7 @@ sudo update-initramfs -u
 输入
 
 ```bash
-lsmod |grep nouveau
+lsmod | grep nouveau
 ```
 
 若无输出，则表示禁用nouveau生效了。
@@ -1258,7 +1258,7 @@ lsmod |grep nouveau
 
 #### 卸载原有驱动
 
-查看当前系统驱动：
+查看当前系统驱动型号：
 
 ```bash
 nvidia-smi
@@ -1556,7 +1556,7 @@ Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 387.26?
 (y)es/(n)o/(q)uit: 
 ```
 
-意思是：**安装NVIDIA驱动吗？**选择`n`，NVIDIA驱动我们单独安装。
+意思是： **安装NVIDIA驱动吗？** 输入`n`，NVIDIA驱动我们已单独安装。
 
 安装过程中每一步的提示如下，请仔细阅读**翻译**，尤其是符号链接那部分：
 
@@ -1787,7 +1787,7 @@ bash
   sudo nvim /etc/profile    // 为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行. 
   ```
 
-  然后在打开的文件里的末尾新增四条命令，具体操作是：按住大写`G`键跳转到文本的最后一行行首，再按住`$`，也就是‘shift + 4’键跳转到最后一行的最后一个字符，按住`i`键进入插入模式，使光标右移一个字符，再回车换行后，添加以下变量
+  然后在打开的文件里的末尾新增四条命令，具体操作是：按住大写`G`键跳转到文本的最后一行行首，再按住`$`跳转到最后一行的最后一个字符，按住`i`键进入插入模式，使光标右移一个字符，再回车换行后，添加以下变量
 
   ```bash
   # CUDA
@@ -1902,7 +1902,7 @@ sudo service lightdm start
 mkdir ~/NVIDIA/cuDNN
 ```
 
-将其拖入到服务器中（使用FileZilla、Xftp进行文件传输）里的NVIDIA文件下的cuDNN文件夹下。
+使用FileZilla、Xftp等文件传输工具。将其拖入到服务器中里的NVIDIA文件夹下的cuDNN文件夹下。
 
 #### cuDNN文件解压
 
@@ -1934,7 +1934,7 @@ ll ~/NVIDIA/cuDNN/cuda/lib64
 
 #### cuDNN配置
 
-解压文件在`~/NVIDIA/cuDNN/cuda`
+cuDNN解压文件在`~/NVIDIA/cuDNN/cuda`下：
 
 ```bash
 # 复制头文件
@@ -2152,12 +2152,6 @@ source activate myenv
 ```
 
 **退出环境**
-
-```bash
-source deactivate myenv
-```
-
-**删除一个已有的环境**
 
 ```bash
 conda deactivate myenv    # for Windows
