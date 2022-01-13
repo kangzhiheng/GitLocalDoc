@@ -3878,6 +3878,12 @@ sudo chmod +w /etc/sudoers
 sudo nvim /etc/sudoers
 ```
 
+或者使用`visudo`命令一键打开编辑（该方法由 @文康 提供，感谢）
+
+```shell
+sudo visudo
+```
+
 然后找到如下界面
 
 ```bash
